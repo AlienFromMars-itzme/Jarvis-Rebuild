@@ -2,18 +2,15 @@
 
 <img src="https://giffiles.alphacoders.com/212/212508.gif" alt="">
 
-## 🌟 **NEW: Enhanced Version 2.0 Available!**
-
-**Jarvis has been completely rebuilt with 15+ advanced features including AI conversations, smart reminders, system automation, and much more!**
+**A comprehensive AI voice assistant with 16+ advanced features including AI conversations, smart reminders, system automation, and much more!**
 
 ### 🚀 Quick Links
 - **[🎯 Quick Start Guide](QUICKSTART.md)** - Get started in 5 minutes!
 - **[📖 Full Documentation](README_ENHANCED.md)** - Complete guide to all 16+ features
-- **[⚡ Original Version](README_ORIGINAL.md)** - The classic Jarvis
 
 ---
 
-## ✨ What's New in Version 2.0?
+## ✨ Features
 
 ### 🧠 AI-Powered Conversations
 - Intelligent responses using OpenAI GPT or Google Gemini
@@ -39,34 +36,6 @@
 - 🧮 Voice-activated calculator
 - 📱 WhatsApp automation
 - And 10+ more features!
-
----
-
-## 🎯 Choose Your Version
-
-### Enhanced Version (Recommended) ⭐
-**16+ advanced features, AI-powered, full automation**
-
-```bash
-cd Jarvis
-python jarvis_enhanced.py
-```
-
-**Features:** AI conversations, smart reminders, news, weather, calculator, system automation, WhatsApp, music, volume control, brightness control, and more!
-
-📖 [**Full Documentation & Setup Guide →**](README_ENHANCED.md)
-
-### Original Version
-**Basic voice assistant with core features**
-
-```bash
-cd Jarvis
-python jarvis.py
-```
-
-**Features:** Time, date, jokes, Wikipedia, basic web browsing, music, screenshots
-
-📖 [**Original Documentation →**](README_ORIGINAL.md)
 
 ---
 
@@ -124,28 +93,6 @@ python jarvis_enhanced.py
 📖 See [README_ENHANCED.md](README_ENHANCED.md) for complete command list
 
 ---
-
-## 📋 Feature Comparison
-
-| Feature | Original | Enhanced |
-|---------|----------|----------|
-| Voice Commands | ✅ | ✅ |
-| Time & Date | ✅ | ✅ |
-| Jokes | ✅ | ✅ |
-| Wikipedia | ✅ | ✅ |
-| Music Playback | ✅ | ✅ (YouTube) |
-| Screenshots | ✅ | ✅ (Custom names) |
-| **AI Conversations** | ❌ | ✅ |
-| **System Monitoring** | ❌ | ✅ |
-| **Smart Reminders** | ❌ | ✅ |
-| **News Updates** | ❌ | ✅ |
-| **Weather** | ❌ | ✅ |
-| **Calculator** | ❌ | ✅ |
-| **Volume Control** | ❌ | ✅ |
-| **Brightness Control** | ❌ | ✅ |
-| **WhatsApp** | ❌ | ✅ |
-| **Power Control** | Partial | ✅ (Full) |
-| **Total Features** | **8** | **16+** |
 
 ---
 
@@ -221,16 +168,18 @@ This project is [MIT](LICENSE) licensed.
 
 ## 👨‍💻 Credits
 
-**Original Version:**
+**Original Creator:**
 - **Kishan Kumar Rai**
   - Twitter: [@kishan_rajput23](https://twitter.com/kishan_rajput23)
   - GitHub: [@kishanrajput23](https://github.com/kishanrajput23)
   - LinkedIn: [@kishan-kumar-rai](https://linkedin.com/in/kishan-kumar-rai-23112000)
 
-**Enhanced Version 2.0:**
-- Enhanced with AI integration, automation, and 15+ new features
-- Modular architecture for easy extension
-- Comprehensive documentation and setup guides
+**Enhanced by:**
+- **AlienFromMars-itzme**
+  - GitHub: [@AlienFromMars-itzme](https://github.com/AlienFromMars-itzme)
+  - Added AI integration, automation, and 15+ new features
+  - Implemented modular architecture for easy extension
+  - Created comprehensive documentation and setup guides
 
 ---
 
@@ -244,7 +193,7 @@ Please ⭐️ this repository if this project helped you!
 
 1. **Fastest Start**: Follow the [Quick Start Guide](QUICKSTART.md) - 5 minutes
 2. **Full Setup**: Read the [Complete Documentation](README_ENHANCED.md)
-3. **Just Explore**: Clone and try `python jarvis_enhanced.py`
+3. **Just Explore**: Clone and try `python jarvis.py`
 
 **Transform your computer into an intelligent AI assistant today!** 🤖✨
 

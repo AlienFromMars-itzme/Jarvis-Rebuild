@@ -57,7 +57,7 @@ This will help you:
 ### 5. Start Jarvis!
 
 ```bash
-python jarvis_enhanced.py
+python jarvis.py
 ```
 
 ## Quick Configuration (Optional)

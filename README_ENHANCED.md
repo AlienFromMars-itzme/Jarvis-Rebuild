@@ -1,4 +1,4 @@
-# Jarvis AI Assistant - Enhanced Version 🤖✨
+# Jarvis AI Assistant - Jarvis AI Assistant 🤖✨
 
 <img src="https://giffiles.alphacoders.com/212/212508.gif" alt="Jarvis AI">
 
@@ -6,7 +6,7 @@
 
 **Jarvis AI Assistant** is an advanced, feature-rich desktop voice assistant powered by AI that can automate your daily tasks, monitor your system, manage communications, and provide intelligent conversations. With 15+ powerful features and AI integration, Jarvis transforms your computer into a smart, voice-controlled companion.
 
-**🔥 New in Version 2.0:**
+**🔥 New in Latest Version:**
 - 🧠 AI-powered conversations (OpenAI GPT / Google Gemini)
 - 🎤 8 different voice options (4 male + 4 female)
 - 💻 Full system automation and monitoring
@@ -209,7 +209,7 @@ Navigate to the Jarvis directory and run:
 
 ```bash
 cd Jarvis
-python jarvis_enhanced.py
+python jarvis.py
 ```
 
 Or for the original (basic) version:
@@ -304,7 +304,7 @@ Ask anything! If Jarvis doesn't have a specific command for it, the AI will resp
 Jarvis-Rebuild/
 ├── Jarvis/
 │   ├── jarvis.py                    # Original version
-│   ├── jarvis_enhanced.py           # Enhanced version (use this)
+│   ├── jarvis.py           # Enhanced version (use this)
 │   ├── config.py                    # Configuration management
 │   ├── ai_engine.py                 # AI integration (OpenAI/Gemini)
 │   ├── voice_manager.py             # Voice control system
@@ -420,7 +420,7 @@ This project is [MIT](LICENSE) licensed.
 - GitHub: [@kishanrajput23](https://github.com/kishanrajput23)
 - LinkedIn: [@kishan-kumar-rai](https://linkedin.com/in/kishan-kumar-rai-23112000)
 
-## 🌟 Enhanced Version Contributors
+## 🌟 Jarvis AI Assistant Contributors
 
 Enhanced with advanced AI features, system automation, and 15+ new capabilities.
 
