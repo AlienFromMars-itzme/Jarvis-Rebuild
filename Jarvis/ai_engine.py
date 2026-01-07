@@ -114,10 +114,10 @@ class AIEngine:
             
             # Get response from OpenAI (v1.x API)
             response = self.ai_client.chat.completions.create(
-                model='gpt-3.5-turbo',
+                model=config.get('ai_settings.model', 'gpt-3.5-turbo'),
                 messages=messages,
-                max_tokens=150,
-                temperature=0.7
+                max_tokens=config.get('ai_settings.max_tokens', 150),
+                temperature=config.get('ai_settings.temperature', 0.7)
             )
             
             ai_response = response.choices[0].message.content.strip()

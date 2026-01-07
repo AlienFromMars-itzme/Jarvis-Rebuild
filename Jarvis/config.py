@@ -28,6 +28,11 @@ class Config:
             "conversation_mode": False,
             "offline_mode": False
         },
+        "ai_settings": {
+            "model": "gpt-3.5-turbo",
+            "max_tokens": 150,
+            "temperature": 0.7
+        },
         "preferences": {
             "news_category": "technology",
             "music_service": "youtube",
