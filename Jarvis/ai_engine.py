@@ -26,9 +26,8 @@ class AIEngine:
         # Try OpenAI first
         if config.has_api_key('openai'):
             try:
-                import openai
-                openai.api_key = config.get_api_key('openai')
-                self.ai_client = openai
+                from openai import OpenAI
+                self.ai_client = OpenAI(api_key=config.get_api_key('openai'))
                 self.ai_type = 'openai'
                 return
             except ImportError:
@@ -113,8 +112,8 @@ class AIEngine:
                 'content': user_input
             })
             
-            # Get response from OpenAI
-            response = self.ai_client.ChatCompletion.create(
+            # Get response from OpenAI (v1.x API)
+            response = self.ai_client.chat.completions.create(
                 model='gpt-3.5-turbo',
                 messages=messages,
                 max_tokens=150,

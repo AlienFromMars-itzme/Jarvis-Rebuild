@@ -28,6 +28,3 @@ newsapi-python>=0.2.7
 # Music & Entertainment
 spotipy>=2.23.0
 youtube-search-python>=1.6.6
-
-# Weather (optional)
-pyowm>=3.3.0

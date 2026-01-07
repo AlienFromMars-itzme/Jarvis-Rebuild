@@ -228,12 +228,29 @@ class ReminderManager:
         self.scheduler.shutdown()
 
 
-# Global reminder manager instance (will be initialized with voice callback)
-reminder_manager = None
+class ReminderManagerSingleton:
+    """Singleton wrapper for ReminderManager."""
+    _instance = None
+    
+    @classmethod
+    def get_instance(cls, voice_callback=None):
+        """Get or create the singleton instance."""
+        if cls._instance is None:
+            cls._instance = ReminderManager(voice_callback)
+        return cls._instance
+    
+    @classmethod
+    def reset(cls):
+        """Reset the singleton (for testing)."""
+        if cls._instance:
+            cls._instance.shutdown()
+        cls._instance = None
 
 
 def init_reminder_manager(voice_callback=None):
-    """Initialize the global reminder manager."""
-    global reminder_manager
-    reminder_manager = ReminderManager(voice_callback)
-    return reminder_manager
+    """Initialize and get the reminder manager singleton."""
+    return ReminderManagerSingleton.get_instance(voice_callback)
+
+
+# For backwards compatibility
+reminder_manager = None

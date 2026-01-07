@@ -38,6 +38,7 @@ class Config:
             "openai_api_key": os.getenv("OPENAI_API_KEY", ""),
             "gemini_api_key": os.getenv("GEMINI_API_KEY", ""),
             "news_api_key": os.getenv("NEWS_API_KEY", ""),
+            "openweather_api_key": os.getenv("OPENWEATHER_API_KEY", ""),
             "spotify_client_id": os.getenv("SPOTIFY_CLIENT_ID", ""),
             "spotify_client_secret": os.getenv("SPOTIFY_CLIENT_SECRET", "")
         }
