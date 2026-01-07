@@ -1,2 +1,17 @@
 .venv
 /.idea
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+Jarvis/data/*.json
+assistant_name.txt
+.DS_Store
+*.log
