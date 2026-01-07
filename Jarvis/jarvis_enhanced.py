@@ -23,6 +23,8 @@ try:
     from whatsapp_handler import whatsapp_handler
     from news_handler import news_handler
     from reminder_manager import init_reminder_manager
+    from calculator import calculator
+    from weather_handler import weather_handler
     from utils import (
         get_greeting, format_time, format_date,
         extract_number, extract_percentage,
@@ -456,6 +458,36 @@ class JarvisAssistant:
         
         self.speak("Which website would you like to open?")
     
+    def handle_calculation(self, query: str):
+        """Perform calculations."""
+        result = calculator.parse_calculation(query)
+        if result:
+            self.speak(f"The answer is {result}")
+        else:
+            self.speak("I couldn't understand that calculation. Please try again.")
+    
+    def handle_weather(self, query: str):
+        """Get weather information."""
+        if not weather_handler.is_available():
+            self.speak("Weather API key not configured. Please add your OpenWeatherMap API key to the .env file")
+            return
+        
+        # Extract city name
+        city = query.replace("weather", "").replace("in", "").replace("at", "").replace("for", "").strip()
+        
+        if not city:
+            city = "London"  # Default city
+        
+        self.speak(f"Checking weather for {city}")
+        weather = weather_handler.get_current_weather(city)
+        
+        if weather:
+            weather_text = weather_handler.format_weather(weather)
+            self.speak(weather_text)
+        else:
+            self.speak(f"Unable to fetch weather information for {city}")
+
+    
     def process_command(self, query: str):
         """Process voice command."""
         if not query:
@@ -542,6 +574,14 @@ class JarvisAssistant:
         
         elif "lock" in query:
             self.handle_lock()
+        
+        # Calculator
+        elif any(word in query for word in ["calculate", "compute", "what is", "what's"]) and any(c in query for c in ['+', '-', '*', '/', 'plus', 'minus', 'times', 'divided']):
+            self.handle_calculation(query)
+        
+        # Weather
+        elif "weather" in query:
+            self.handle_weather(query)
         
         # Exit commands
         elif any(word in query for word in ["offline", "exit", "quit", "goodbye", "bye"]):
